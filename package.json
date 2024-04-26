@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@aave/core-v3": "^1.19.3",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.12.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
