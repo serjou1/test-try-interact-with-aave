@@ -50,4 +50,11 @@ contract TestLiquidator is Test {
         (,,,,, uint256 healthFactor) = s_liquidator.getUserAccountData(userToLiquidate);
 
     }
+
+    function testNeonDevnetContract() public {
+        address userToLiquidate = 0x21E53AF80B2b06F672BE5A4AC99900dCA079C80e;
+        Liquidator existing = Liquidator(0x95Aab61Bc923E2E8E38FFB80E6c4D775515242ba);
+        (,,,,, uint256 healthFactor) = existing.getUserAccountData(userToLiquidate);
+        console.logUint(healthFactor);
+    }
 }

@@ -12,8 +12,10 @@ contract DeployLiquidator is Script {
         address usdcAddress = helperConfig.getNetworkConfig().usdcAddress;
         address wethAddress = helperConfig.getNetworkConfig().wethAddress;
         
+        // console.log(msg.sender);
+
         vm.startBroadcast();
-        Liquidator liquidator = new Liquidator(aavePoolAddress, usdcAddress, wethAddress);
+        Liquidator liquidator = new Liquidator(aavePoolAddress);
         vm.stopBroadcast();
 
         return liquidator;

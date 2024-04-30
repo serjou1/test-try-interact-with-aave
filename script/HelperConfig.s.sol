@@ -37,7 +37,7 @@ contract HelperConfig is Script {
 
     function getNeonDevnetScriptConfig() private pure returns (NetworkConfig memory) {
         return NetworkConfig({
-            aavePoolAddress: 0xbf0AdF6ca0571F7A52c69B30652bD29374D17738,
+            aavePoolAddress: 0x64916311cf63F208069E5Ef6CA4b2a4Dc1987e8a,
             usdcAddress: 0x26833EeC144EF2d7b2394CAFbd5CD5ceB1d3B3Af,
             wethAddress: 0x9720f3c6186111C0dc9f47c79B8C19fc8bAC5cfB
         });

@@ -17,3 +17,5 @@ docs/
 .env
 
 node_modules/
+
+artifacts/
